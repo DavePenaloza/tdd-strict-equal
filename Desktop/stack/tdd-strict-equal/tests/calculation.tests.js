@@ -7,11 +7,53 @@ describe('stricEqual', function () {
   describe('strictEqual', () => {
     it('return value of true if all the values are strictly equal to each other', () => {
       // set up the test data
-      var testData = (5, 5)
+      var testData = strictEqual(5, 5)
 
-      // call function from outside file
-      strictEqual(testData)
       // assert what should be true
-    }); expect().is.equal.to.strictEqual
+    }); expect(testData).to.equal(true)
+  })
+})
+
+describe('stricEqual', function () {
+  describe('strictEqual', () => {
+    it('return value of true if all the values are strictly equal to each other', () => {
+      // set up the test data
+      var testData = strictEqual('5', '5')
+
+      // assert what should be true
+    }); expect(testData).to.equal(true)
+  })
+})
+
+describe('stricEqual', function () {
+  describe('strictEqual', () => {
+    it('return value of true if all the values are strictly equal to each other', () => {
+      // set up the test data
+      var testData = strictEqual('a', 'a')
+
+      // assert what should be true
+    }); expect(testData).to.equal(true)
+  })
+})
+
+describe('stricEqual', function () {
+  describe('strictEqual', () => {
+    it('return value of false if all the values are not strictly equal to each other', () => {
+      // set up the test data
+      var testData = strictEqual( 1, 'a')
+
+      // assert what should be true
+    }); expect(testData).to.equal(false)
+  })
+})
+
+describe('stricEqual', function () {
+  describe('strictEqual', () => {
+    it('return value of false if all the values are not strictly equal to each other', () => {
+      // set up the test data
+      var testData = strictEqual( 1, '1')
+
+      // assert what should be true
+    }); expect(testData).to.equal(false)
   })
 })
